@@ -3,3 +3,33 @@
     margin:0;
     padding:0;
 }
+
+
+/* footer */
+footer{
+    background-color: #0A0826;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+.footer h2{
+    font-size: 24px;
+    line-height: 36px;
+}
+.footer p{
+    font-size: 14px;
+    line-height: 24px;
+}
+.footer .icon i{
+    font-size: 22px;
+    color: #FFFEFE;
+    background: #23213D;
+    padding: 8px;
+    margin: 17px 6px;
+    border-radius: 50%;
+    opacity: .7;
+}
+
+.footer .icon a:hover i{
+    opacity: 1;
+}
