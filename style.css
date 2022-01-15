@@ -3,6 +3,9 @@
     margin:0;
     padding:0;
 }
+html, body{
+    overflow-x: hidden;
+}
 h2{
     font-family: Poppins;
 }
@@ -268,4 +271,76 @@ footer{
 
 .footer .icon a:hover i{
     opacity: 1;
+}
+@media screen and (max-width: 1023px) {
+    .mob-bar{
+        display: block;
+        font-size: 18px;
+    }
+    .navbar{
+        display: none;
+    }
+    .content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 767px) {
+    .mob-bar{
+        display: block;
+        font-size: 18px;
+    }
+    .navbar{
+        display: none;
+    }
+    i.fas.fa-shopping-cart {
+        position: absolute;
+        right: 10px;
+        top: 35px;
+    }
+    .content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+    
+    section.company.d-flex img {
+        width: fit-content;
+    }
+    a.search {
+        display: none;
+    }
+
+    .logo {
+        font-size: 18px !important;
+    }
+
+    a.card {
+        float: right;
+        width: 0px;
+    }
+
+    section.start-journey {
+        padding: 0;
+        grid-template-columns: repeat(1, 1fr);
+        height: calc(100vh - 60px);
+        height: 100vh;
+    }
+
+    .start-journey h2 {
+        font-size: 27px;
+        line-height: 38px;
+        margin-bottom: 9px;
+    }
+
+    .left-box.d-flex {
+        order: 2;
+        text-align: center;
+    }
+
+    .start-journey a {
+        text-align: center;
+        margin: 26px auto;
+    }
+    .footer h2 {
+        font-size: 22px;
+    }
 }
