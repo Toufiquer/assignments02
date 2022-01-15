@@ -15,6 +15,59 @@ h2{
 .thumbnail img{
     width: 100%;
 }
+hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0)
+    );
+}
+/* nav */
+header{
+    width: 100%;
+    padding: 30px 0;
+
+}
+nav.d-flex{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+.mob-bar{
+    display: none;
+}
+header .logo{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #3A3A3A;
+}
+ul.d-flex{
+    flex-direction: row;
+}
+ul li{
+    list-style-type: none;
+}
+ul li a {
+    padding: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3B3A3B;
+}
+.shopping-card.d-flex{
+    flex-direction: row;
+}
+.shopping-card.d-flex i{
+    font-size: 24px;
+    margin-left: 35px;
+    color: #010001;
+}
 /* main */
 .start-journey{
     width: 80%;
@@ -48,9 +101,19 @@ h2{
 .start-journey a i{
     padding-left: 8px;
 }
+/* Company */
+.company.d-flex{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding: 16px 70px;
+}
 /* collection */
 .collection{
     flex-direction: column;
+    margin-top: 70px;
 }
 .collection h2{
     font-weight: 600;
@@ -109,7 +172,7 @@ article p{
     color: #5E6366;
     padding: 6px; 
 }
-.collection.more{
+.collection-more{
     width: 100%;
 }
 .collection a{
@@ -124,6 +187,23 @@ article p{
 
 .collection a i{
     padding-left: 8px;
+}
+/* client */
+.client{
+    margin-bottom: 70px;
+}
+.client h2{
+    font-size: 34px;
+    font-weight: 700;
+}
+.client.d-flex{
+    text-align: center;
+}
+
+.client.d-flex .thumbnail img{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
 }
 /* footer */
 footer{
